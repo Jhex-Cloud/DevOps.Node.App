@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
+    "start": "cd app && node index",
     "dev": "nodemon index",
     "p": "prettier --write './**/*.js'"
   },
