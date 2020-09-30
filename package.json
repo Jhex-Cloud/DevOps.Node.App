@@ -7,7 +7,7 @@
     "start": "cd app && node index",
     "dev": "nodemon index",
     "build": "tsc -p .",
-    "p": "prettier --write './**/*.js'"
+    "p": "prettier --write './**/*.ts' './**/*.js'"
   },
   "author": "",
   "license": "ISC",
