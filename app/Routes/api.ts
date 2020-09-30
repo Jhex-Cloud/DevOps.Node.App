@@ -1,8 +1,9 @@
-const express = require('express')
+import express from 'express'
 const router = express.Router()
 const recepies = require('../Database/recepies')
 
-const idFilter = (req) => (recepie) => recepie.id === parseInt(req.params.id)
+const idFilter = (req: any) => (recepie: any) =>
+  recepie.id === parseInt(req.params.id)
 
 //Return all recepies as JSON
 router.get('/all', (req, res) => res.json(recepies))
