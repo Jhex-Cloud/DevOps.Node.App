@@ -1,6 +1,6 @@
 # Simple Node REST App
 
-Project Link: https://github.com/MyCloudle/DevOps-Days/tree/main/Project%20Ideas/Docker-Node-Demo
+[Project Link](https://github.com/MyCloudle/DevOps-Days/tree/main/Project%20Ideas/Docker-Node-Demo)
 
 ### Version 1: Implementation
 
