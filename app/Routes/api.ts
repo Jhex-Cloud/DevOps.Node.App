@@ -1,4 +1,6 @@
 import express from 'express'
+import { recepie } from '../Database/recepies'
+
 const router = express.Router()
 const recepies = require('../Database/recepies')
 
@@ -42,7 +44,7 @@ router.put('/:id', (req, res) => {
   const found = recepies.some(idFilter(req))
 
   if (found) {
-    recepies.forEach((recepie, i) => {
+    recepies.forEach((recepie: recepie, i) => {
       if (idFilter(req)(recepie)) {
         const updrecepie = { ...recepie, ...req.body }
         recepies[i] = updrecepie
@@ -61,7 +63,7 @@ router.delete('/:id', (req, res) => {
   if (found) {
     res.json({
       msg: 'recepie deleted',
-      recepies: recepies.filter((recepie) => !idFilter(req)(recepie)),
+      recepies: recepies.filter((recepie: recepie) => !idFilter(req)(recepie)),
     })
   } else {
     res.status(400).json({ msg: `No recepie with the id of ${req.params.id}` })
