@@ -1,8 +1,9 @@
 import express from 'express'
+import RootController from './Controller/'
+
 const app = express()
 const port = process.env.PORT || 5000
 const apiRoutes = require('./Routes/api')
-const { RootController } = require('./Controller/')
 
 app.get('/', RootController)
 
