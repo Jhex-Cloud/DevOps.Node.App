@@ -44,7 +44,7 @@ router.put('/:id', (req, res) => {
   const found = recepies.some(idFilter(req))
 
   if (found) {
-    recepies.forEach((recepie: recepie, i) => {
+    recepies.forEach((recepie: recepie, i: any) => {
       if (idFilter(req)(recepie)) {
         const updrecepie = { ...recepie, ...req.body }
         recepies[i] = updrecepie
