@@ -7,10 +7,10 @@ const recepies = require('../Database/recepies')
 const idFilter = (req: any) => (recepie: any) =>
   recepie.id === parseInt(req.params.id)
 
-//Return all recepies as JSON
+// Return all recepies as JSON
 router.get('/all', (req, res) => res.json(recepies))
 
-//Return Single recepie
+// Return Single recepie
 router.get('/:id', (req, res) => {
   const found = recepies.some(idFilter(req))
   if (found) {
