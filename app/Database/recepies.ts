@@ -1,6 +1,12 @@
-// Dummy DB Data for Testing purposes
+interface recepie {
+  id: number
+  title: string
+  href: string
+  ingredients: string
+  thumbnail: string
+}
 
-const recepies = [
+const recepies: recepie[] = [
   {
     id: 1,
     title: 'Vegetable-Pasta Oven Omelet',
@@ -89,4 +95,4 @@ const recepies = [
   },
 ]
 
-module.exports = recepies
+export = recepies
