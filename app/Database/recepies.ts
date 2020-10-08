@@ -1,4 +1,4 @@
-interface recepie {
+export interface recepie {
   id: number
   title: string
   href: string
@@ -6,7 +6,7 @@ interface recepie {
   thumbnail: string
 }
 
-const recepies: recepie[] = [
+const foodRecepies: recepie[] = [
   {
     id: 1,
     title: 'Vegetable-Pasta Oven Omelet',
@@ -95,4 +95,4 @@ const recepies: recepie[] = [
   },
 ]
 
-export = recepies
+export const recepies = foodRecepies
