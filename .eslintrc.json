@@ -19,6 +19,7 @@
   },
   "plugins": ["@typescript-eslint", "prettier", "import"],
   "rules": {
+    "no-console": "error",
     "comma-dangle": [
       "error",
       {
