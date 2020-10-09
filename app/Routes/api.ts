@@ -37,7 +37,7 @@ router.post('/add', (req, res) => {
       .json({ msg: 'Pls include ID.. Title.. Href.. Ingredients' })
   }
   foodRecepies.push(newRecepie)
-  res.json(foodRecepies)
+  return res.json(foodRecepies)
 })
 
 // Update Recepie Info

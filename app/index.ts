@@ -5,6 +5,7 @@ const app = express()
 const port = process.env.PORT || 5000
 const apiRoutes = require('./Routes/api')
 
+app.set('view engine', 'ejs')
 app.get('/', RootController)
 
 app.use('/api', apiRoutes)
