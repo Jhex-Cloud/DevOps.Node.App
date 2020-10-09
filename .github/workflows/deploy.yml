@@ -3,6 +3,8 @@ name: Deployment to Docker Hub
 on:
   push:
     branches: [production]
+  pull-request:
+    branches: [production]
 
 jobs:
   build:
