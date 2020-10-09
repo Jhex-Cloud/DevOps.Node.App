@@ -20,4 +20,4 @@ jobs:
           docker build -t ts-express-docker-app .
       - name: docker push
         run: |
-          docker push ts-express-docker-app
+          docker push $DOCKER_USER/ts-express-docker-app
