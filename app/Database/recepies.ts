@@ -14,7 +14,7 @@ const recepies: recepieInterface[] = [
       'http://find.myrecipes.com/recipes/recipefinder.dyn?action=displayRecipe&recipe_id=520763',
     ingredients:
       'tomato, onions, red pepper, garlic, olive oil, zucchini, cream cheese, vermicelli, eggs, parmesan cheese, milk, italian seasoning, salt, black pepper',
-    thumbnail: 'http://img.recipepuppy.com/560556.jpg',
+    thumbnail: 'http://img.recipepuppy.com/560556.jpg'
   },
   {
     id: 2,
@@ -91,8 +91,8 @@ const recepies: recepieInterface[] = [
       'http://find.myrecipes.com/recipes/recipefinder.dyn?action=displayRecipe&recipe_id=1622444',
     ingredients:
       'egg substitute, milk, parsley, thyme, salt, black pepper, eggs, flour, nonstick cooking spray, onions, garlic, salad greens, salad greens, red wine vinegar, olive oil, goat cheese, almonds',
-    thumbnail: 'http://img.recipepuppy.com/514820.jpg',
-  },
+    thumbnail: 'http://img.recipepuppy.com/514820.jpg'
+  }
 ]
 
 export const foodRecepies = recepies
