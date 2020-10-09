@@ -3,3 +3,7 @@ Dockerfile
 .git
 LICENCE
 README.md
+.eslintrc.json
+.prettierrc
+Procfile
+tsconfig.json
