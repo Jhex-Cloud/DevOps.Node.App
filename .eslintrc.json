@@ -21,16 +21,7 @@
   "rules": {
     "semi": 0,
     "no-console": "off",
-    "comma-dangle": [
-      "error",
-      {
-        "arrays": "never",
-        "objects": "never",
-        "imports": "never",
-        "exports": "never",
-        "functions": "never"
-      }
-    ],
+    "comma-dangle": ["error","never"],
     "prettier/prettier": "error",
     "import/extensions": [
       "error",
