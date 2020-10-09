@@ -4,6 +4,7 @@ Dockerfile
 LICENCE
 README.md
 .eslintrc.json
+.eslintignore
 .prettierrc
 Procfile
 tsconfig.json
