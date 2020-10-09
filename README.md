@@ -21,6 +21,9 @@
 
 ### Version 2.1: ESLint Pre-Commit Hook
 
+1. Added Pre-Commit Hook via Husky and Lint-Staged
+2. Improve code quality. Enforce code quality working with teams.
+
 ### Version 2.2: Basic EJS Template setup in Express
 
 ### Version 3 : CI/CD pipeline implementation via Github Actions
