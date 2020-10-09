@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node app/index",
     "dev": "nodemon dist/index",
-    "build": "tsc -p .",
+    "build": "tsc -p . && cp -a ./app/views ./dist/views",
     "p": "prettier --write './**/*.ts'",
     "lint": "eslint '**/*.ts' --fix"
   },
