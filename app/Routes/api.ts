@@ -1,20 +1,20 @@
 import express from 'express'
-import { recepie } from '../Database/recepies'
+import { recepieInterface, foodRecepies } from '../Database/recepies'
 
 const router = express.Router()
-const recepies = require('../Database/recepies')
 
-const idFilter = (req: any) => (recepie: any) =>
+const idFilter = (req: any) => (recepie: recepieInterface) =>
+  // eslint-disable-next-line radix
   recepie.id === parseInt(req.params.id)
 
-// Return all recepies as JSON
-router.get('/all', (req, res) => res.json(recepies))
+// Return all foodRecepies as JSON
+router.get('/all', (req, res) => res.json(foodRecepies))
 
 // Return Single recepie
 router.get('/:id', (req, res) => {
-  const found = recepies.some(idFilter(req))
+  const found = foodRecepies.some(idFilter(req))
   if (found) {
-    res.json(recepies.filter(idFilter(req)))
+    res.json(foodRecepies.filter(idFilter(req)))
   } else {
     res.status(400).json({ msg: `No recepie with the id of ${req.params.id}` })
   }
@@ -23,7 +23,7 @@ router.get('/:id', (req, res) => {
 // Create Recepie
 router.post('/add', (req, res) => {
   const newRecepie = {
-    ...req.body,
+    ...req.body
   }
   if (
     !newRecepie.id ||
@@ -35,19 +35,19 @@ router.post('/add', (req, res) => {
       .status(400)
       .json({ msg: 'Pls include ID.. Title.. Href.. Ingredients' })
   }
-  recepies.push(newRecepie)
-  res.json(recepies)
+  foodRecepies.push(newRecepie)
+  res.json(foodRecepies)
 })
 
 // Update Recepie Info
 router.put('/:id', (req, res) => {
-  const found = recepies.some(idFilter(req))
+  const found = foodRecepies.some(idFilter(req))
 
   if (found) {
-    recepies.forEach((recepie: recepie, i: any) => {
+    foodRecepies.forEach((recepie: recepie, i: any) => {
       if (idFilter(req)(recepie)) {
         const updrecepie = { ...recepie, ...req.body }
-        recepies[i] = updrecepie
+        foodRecepies[i] = updrecepie
         res.json({ msg: 'recepie updated', updrecepie })
       }
     })
@@ -58,12 +58,12 @@ router.put('/:id', (req, res) => {
 
 // Delete recepie
 router.delete('/:id', (req, res) => {
-  const found = recepies.some(idFilter(req))
+  const found = foodRecepies.some(idFilter(req))
 
   if (found) {
     res.json({
       msg: 'recepie deleted',
-      recepies: recepies.filter((recepie: recepie) => !idFilter(req)(recepie)),
+      foodRecepies: foodRecepies.filter((recepie: recepieInterface) => !idFilter(req)(recepie)),
     })
   } else {
     res.status(400).json({ msg: `No recepie with the id of ${req.params.id}` })
