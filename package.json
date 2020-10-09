@@ -10,6 +10,14 @@
     "p": "prettier --write './**/*.ts'",
     "lint": "npm run p && eslint '**/*.ts' --fix"
   },
+  "husky":{
+    "hooks":{
+      "pre-commit":"lint-staged"
+    }
+  },
+  "lint-staged":{
+    "**/*.+(js|ts)": ["eslint --fix", "prettier --write", "git add"]
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -26,6 +34,8 @@
     "eslint-import-resolver-typescript": "^2.3.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.0",
     "nodemon": "^2.0.4",
     "prettier": "^2.1.2",
     "ts-node": "^9.0.0",
