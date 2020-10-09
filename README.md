@@ -13,8 +13,11 @@
 
 ### Version 2: Implementation
 
-1. Migrated to Typescript
-2. Used eslint and prettier. Following Air-Bnb style guide.
+1. Migrated to Typescript.
+2. Eslint and Prettier setup. 
+    - Followed Airbnb style guide.
+    - Setup eslint config and eslint ignore files.
+3. Updated Dockerfile.
 
 ### Version 2.1: ESLint Pre-Commit Hook
 
