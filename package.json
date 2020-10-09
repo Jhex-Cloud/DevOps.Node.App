@@ -8,7 +8,7 @@
     "dev": "nodemon dist/index",
     "build": "tsc -p .",
     "p": "prettier --write './**/*.ts'",
-    "lint": "eslint '**/*.ts' --fix"
+    "lint": "npm run p && eslint '**/*.ts' --fix"
   },
   "author": "",
   "license": "ISC",
