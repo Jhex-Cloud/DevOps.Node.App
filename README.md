@@ -14,9 +14,9 @@
 ### Version 2: Implementation
 
 1. Migrated to Typescript.
-2. Eslint and Prettier setup. 
-    - Followed Airbnb style guide.
-    - Setup eslint config and eslint ignore files.
+2. Eslint and Prettier setup.
+   - Followed Airbnb style guide.
+   - Setup eslint config and eslint ignore files.
 3. Updated Dockerfile.
 
 ### Version 2.1: ESLint Pre-Commit Hook
@@ -28,10 +28,13 @@
 
 1. Added EJS Templates.
 2. Modified Build Script.
-    - TSC complies all ```.ts``` files and outputs to dist folder. EJS Views need to be copied from  ```./app``` to ```./dist```.
-    
+   - TSC complies all `.ts` files and outputs to dist folder. EJS Views need to be copied from `./app` to `./dist`.
 
 ### Version 3 : CI/CD pipeline implementation via Github Actions
+
+1. Setup Github Actions CI/CD Pipeline.
+2. Updated Dockerfile.
+3. Github Actions CI/CD creates Docker Container and pushes to Docker Hub.
 
 ### Version 3.1: CI/CD pipeline implementation via Jenkins
 
