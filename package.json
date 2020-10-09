@@ -16,7 +16,7 @@
     }
   },
   "lint-staged":{
-    "**/*.ts": ["npm run p", "npm run lint", "git add"]
+    "**/*.ts": ["npm run p", "npm run lint"]
   },
   "author": "",
   "license": "ISC",
