@@ -6,7 +6,7 @@ export interface recepie {
   thumbnail: string
 }
 
-const foodRecepies: recepie[] = [
+const recepies: recepie[] = [
   {
     id: 1,
     title: 'Vegetable-Pasta Oven Omelet',
@@ -23,7 +23,7 @@ const foodRecepies: recepie[] = [
       'http://www.bigoven.com/43919-Roasted-Pepper-and-Bacon-Omelet-recipe.html',
     ingredients:
       'eggs, salt, black pepper, butter, black pepper, bacon, onions, garlic, roasted red peppers, oregano, black pepper',
-    thumbnail: '',
+    thumbnail: ''
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const foodRecepies: recepie[] = [
     href: 'http://cookeatshare.com/recipes/broccoli-oven-omelet-92851',
     ingredients:
       'eggs, broccoli, onions, parmesan cheese, lowfat milk, salt, basil, garlic, tomato, parmesan cheese',
-    thumbnail: '',
+    thumbnail: ''
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const foodRecepies: recepie[] = [
       'http://www.epicurious.com/recipes/food/views/Eggplant-Omelet-with-Coriander-and-Caraway-306',
     ingredients:
       'caraway seed, coriander, eggplant, eggs, garlic, lemon, olive oil, onions, black pepper, salt',
-    thumbnail: '',
+    thumbnail: ''
   },
   {
     id: 5,
@@ -49,7 +49,7 @@ const foodRecepies: recepie[] = [
       'http://www.bigoven.com/143831-Eggplant-Omelet-with-Coriander-And-Caraway-recipe.html',
     ingredients:
       'eggplant, olive oil, onions, garlic, egg, caraway seed, coriander, salt, black pepper, lemon',
-    thumbnail: '',
+    thumbnail: ''
   },
   {
     id: 6,
@@ -57,7 +57,7 @@ const foodRecepies: recepie[] = [
     href: 'http://www.bigoven.com/45151-Broccoli-and-Cheese-Omelet-recipe.html',
     ingredients:
       'onions, garlic, chicken broth, cottage cheese, oregano, black pepper, egg substitute, bread, mozzarella cheese, butter',
-    thumbnail: '',
+    thumbnail: ''
   },
   {
     id: 7,
@@ -65,7 +65,7 @@ const foodRecepies: recepie[] = [
     href: 'http://www.bigoven.com/149383-Chard-And-Onion-Omelet-recipe.html',
     ingredients:
       'olive oil, onions, leaves, garlic, eggs, parsley, basil, thyme, gruyere cheese, parmesan cheese',
-    thumbnail: '',
+    thumbnail: ''
   },
   {
     id: 8,
@@ -74,7 +74,7 @@ const foodRecepies: recepie[] = [
       'http://www.cdkitchen.com/recipes/recs/2184/Picnic-Omelet-Squares99498.shtml',
     ingredients:
       'eggs, garlic, parmesan cheese, olive oil, onions, peas, potato, red pepper, salt, tomato, zucchini',
-    thumbnail: '',
+    thumbnail: ''
   },
   {
     id: 9,
@@ -82,7 +82,7 @@ const foodRecepies: recepie[] = [
     href: 'http://www.cooks.com/rec/view/0,185,153160-249194,00.html',
     ingredients:
       'vegetable oil, green pepper, onions, water, milk, eggs, black pepper, mushroom, garlic, salt, chili powder',
-    thumbnail: '',
+    thumbnail: ''
   },
   {
     id: 10,
@@ -95,4 +95,4 @@ const foodRecepies: recepie[] = [
   },
 ]
 
-export const recepies = foodRecepies
+export const foodRecepies = recepies
