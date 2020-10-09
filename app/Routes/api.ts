@@ -1,10 +1,11 @@
+/* eslint-disable radix */
 import express from 'express'
 import { recepieInterface, foodRecepies } from '../Database/recepies'
 
 const router = express.Router()
 
 const idFilter = (req: any) => (recepie: recepieInterface) =>
-  // eslint-disable-next-line radix
+  // eslint-disable-next-line implicit-arrow-linebreak
   recepie.id === parseInt(req.params.id)
 
 // Return all foodRecepies as JSON
@@ -63,7 +64,9 @@ router.delete('/:id', (req, res) => {
   if (found) {
     res.json({
       msg: 'recepie deleted',
-      foodRecepies: foodRecepies.filter((recepie: recepieInterface) => !idFilter(req)(recepie)),
+      foodRecepies: foodRecepies.filter(
+        (recepie: recepieInterface) => !idFilter(req)(recepie)
+      )
     })
   } else {
     res.status(400).json({ msg: `No recepie with the id of ${req.params.id}` })
