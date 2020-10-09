@@ -26,6 +26,11 @@
 
 ### Version 2.2: Basic EJS Template setup in Express
 
+1. Added EJS Templates.
+2. Modified Build Script.
+    - TSC complies all ```.ts``` files and outputs to dist folder. EJS Views need to be copied from  ```./app``` to ```./dist```.
+    
+
 ### Version 3 : CI/CD pipeline implementation via Github Actions
 
 ### Version 3.1: CI/CD pipeline implementation via Jenkins
