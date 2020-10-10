@@ -3,7 +3,7 @@ name: Deployment to Docker Hub
 on:
   push:
     branches: [production]
-  pull-request:
+  pull_request:
     branches: [production]
 
 jobs:
@@ -15,7 +15,7 @@ jobs:
       - name: Build and Push Docker Image
         uses: mr-smithers-excellent/docker-build-push@v4
         with:
-          image: jagankaartik918/docker_demo_projects
+          image:  ${{ secrets.DOCKER_USER }}/docker-node-demo-ts
           tag: latest
           registry: docker.io
           username: ${{ secrets.DOCKER_USER }}
