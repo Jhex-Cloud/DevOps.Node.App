@@ -39,3 +39,46 @@
 ### Version 3.1: CI/CD pipeline implementation via Jenkins
 
 ### Version 4 : Sample Deployment into AWS EC2 Instance or Azure Instance.
+
+### Folder Structure
+
+```
+.
+├── Dockerfile
+├── LICENSE
+├── Procfile
+├── README.md
+├── app
+│   ├── Controller
+│   │   └── index.ts
+│   ├── Database
+│   │   └── recepies.ts
+│   ├── Routes
+│   │   └── api.ts
+│   ├── index.ts
+│   └── views
+│       ├── pages
+│       │   └── index.ejs
+│       └── partials
+│           ├── footer.ejs
+│           ├── head.ejs
+│           └── header.ejs
+├── dist
+│   ├── Controller
+│   │   └── index.js
+│   ├── Database
+│   │   └── recepies.js
+│   ├── Routes
+│   │   └── api.js
+│   ├── index.js
+│   └── views
+│       ├── pages
+│       │   └── index.ejs
+│       └── partials
+│           ├── footer.ejs
+│           ├── head.ejs
+│           └── header.ejs
+├── package-lock.json
+├── package.json
+└── tsconfig.json
+```
