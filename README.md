@@ -1,4 +1,4 @@
-# TypeScript Express-Node Docker Demo App
+# DevOps: Node App
 
 > This is a basic CRUD app built on Express.js. This app was created to understand the fundamentals of Docker, CI/CD and TypeScript server development.
 
