@@ -2,7 +2,6 @@
 
 > This is a basic CRUD app built on Express.js. This app was created to understand the fundamentals of Docker, CI/CD and TypeScript server development.
 
-[Project Link](https://github.com/MyCloudle/DevOps-Days/tree/main/Project%20Ideas/Docker-Node-Demo)
 
 ### Folder Structure
 
